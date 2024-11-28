@@ -1,0 +1,206 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0.8rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1565C0;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.nav-links a:hover {
+    color: #1565C0;
+    background-color: rgba(21, 101, 192, 0.1);
+}
+
+.nav-icon {
+    font-size: 1.2rem;
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    margin-left: 1rem;
+}
+
+.search-icon {
+    color: #666;
+    margin-right: 0.5rem;
+}
+
+.nav-search input {
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 0.9rem;
+    width: 200px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.8rem 1rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .nav-search input {
+        width: 150px;
+    }
+
+    .nav-links span {
+        display: none;
+    }
+
+    .nav-icon {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-links span {
+        display: none;
+    }
+
+    .nav-search {
+        display: none;
+    }
+} 
+
+/* Add or update these styles */
+html {
+  scroll-behavior: smooth;
+} 
+
+/* Add these new styles */
+.cart-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  color: #666;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.cart-button:hover {
+  color: #1565C0;
+  background-color: rgba(21, 101, 192, 0.1);
+  transform: translateY(-1px);
+}
+
+.cart-icon-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #e74c3c;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  animation: popIn 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.cart-text {
+  font-size: 1rem;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Update responsive styles */
+@media (max-width: 768px) {
+  .cart-text {
+    display: none;
+  }
+  
+  .cart-button {
+    padding: 0.5rem;
+  }
+  
+  .cart-count {
+    top: -5px;
+    right: -5px;
+  }
+}
+
+/* Add a subtle animation for the cart icon */
+.cart-button:hover .nav-icon {
+  transform: translateY(-1px);
+  transition: transform 0.3s ease;
+}
+
+/* Optional: Add a bounce animation when cart count changes */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(-2px);
+  }
+}
+
+.cart-count.bounce {
+  animation: bounce 0.5s ease;
+} 
