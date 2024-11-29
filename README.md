@@ -3,12 +3,19 @@
 Welcome to **Maison Élite**, a modern e-commerce web application that showcases luxury fashion and lifestyle products. This project is built with React.js and provides a seamless shopping experience for users.
 
 ## Table of Contents
+- [Preview](#Preview)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
+
+## Preview
+<div style="display: flex; gap: 10px;">
+  <img src="https://github.com/user-attachments/assets/ec4026fa-8708-4b0c-a03e-7b949c4dc3f4" alt="Homepage View" width="45%" />
+  <img src="https://github.com/user-attachments/assets/13edcbfa-5d2e-4d6e-adcc-cbbc5ea7816b" alt="Product Category Page" width="45%" />
+</div>
 
 ## Features
 - **Dynamic Product Display**: Fetches products and categories from a REST API.
