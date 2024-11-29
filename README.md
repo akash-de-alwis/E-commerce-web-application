@@ -1,6 +1,6 @@
 # Maison Élite
 
-Welcome to **Maison Élite**, a modern e-commerce web application that showcases luxury fashion and lifestyle products. This project is built with React.js and provides a seamless shopping experience for users.
+Welcome to **Maison Élite**, a modern e-commerce web application that showcases luxury fashion and lifestyle products. This project is built with React.js and provides a seamless shopping experience for users..
 
 ## Table of Contents
 - [Preview](#Preview)
