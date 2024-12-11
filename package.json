@@ -2,7 +2,7 @@
   "name": "your-project-name",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://USERNAME.github.io/REPO",
+  "homepage": "https://github.com/akash-de-alwis/E-commerce-web-application.git",
   "dependencies": {
     "gh-pages": "^6.2.0",
     "react-scripts": "^5.0.1"
